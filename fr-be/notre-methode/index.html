@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="fr-BE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Notre Méthode de Test sur Chantier (iOS &amp; Android Belgique) — werkbonappvergelijken.be</title>
+<meta name="description" content="Comment werkbonappvergelijken.be teste les applications de chantier sur iPhone et Android en Belgique.">
+<link rel="canonical" href="https://werkbonappvergelijken.be/fr-be/notre-methode/">
+<link rel="alternate" hreflang="fr-BE" href="https://werkbonappvergelijken.be/fr-be/notre-methode/">
+<link rel="alternate" hreflang="nl-BE" href="https://werkbonappvergelijken.be/hoe-wij-testen/">
+<meta property="og:locale" content="fr_BE">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Étude Terrain Applications de Chantier Belgique">
+<meta property="og:title" content="Notre Méthode de Test sur Chantier (iOS &amp; Android Belgique) — werkbonappvergelijken.be">
+<meta property="og:description" content="Comment werkbonappvergelijken.be teste les applications de chantier sur iPhone et Android en Belgique.">
+<meta property="og:url" content="https://werkbonappvergelijken.be/fr-be/notre-methode/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2310B981'/><stop offset='1' stop-color='%23047857'/></linearGradient></defs><rect width='32' height='32' rx='9' fill='url(%23g)'/><rect x='10' y='5.5' width='12' height='21' rx='3' fill='none' stroke='%23fff' stroke-width='2.2'/><circle cx='16' cy='22.5' r='1.2' fill='%23fff'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<style>*{box-sizing:border-box}:root{--bg:#F5F5F7;--card:#fff;--ink:#1D1D1F;--muted:#6E6E73;--line:#E5E5EA;--accent:#059669;--accent2:#047857;--star:#F59E0B}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif}a{color:var(--accent2);text-decoration:none}a:hover{text-decoration:underline}.wrap{max-width:1100px;margin:0 auto;padding:0 1.15rem}header.cab{background:rgba(255,255,255,.9);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}.cab-in{display:flex;align-items:center;justify-content:space-between;height:56px;gap:1rem;flex-wrap:wrap}nav a{margin-left:.85rem;font-size:.88rem;color:var(--muted)}.lang-sw{margin-left:.85rem;font-size:.82rem;padding:.18rem .55rem;border:1px solid var(--line);border-radius:99px;background:#fff}main{padding:1.75rem 0 4rem}h1{font-size:clamp(1.65rem,3vw,2.3rem);line-height:1.16;margin:.3rem 0 .55rem}h2{font-size:1.3rem;margin:2rem 0 .6rem}.sub{color:var(--muted);max-width:74ch;margin:0 0 1.2rem}.pill{display:inline-block;background:#ECFDF5;color:var(--accent2);font-size:.76rem;font-weight:700;padding:.2rem .65rem;border-radius:99px}.app-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:.95rem;margin:1rem 0 1.8rem}.app-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:1.1rem}.t-wrap{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:14px}table.t,table{width:100%;border-collapse:collapse;font-size:.84rem}th,td{padding:.55rem .65rem;border-bottom:1px solid var(--line);text-align:left}th{background:#FAFAFC;font-size:.74rem;text-transform:uppercase;color:var(--muted)}.of-chips{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.6rem}.of-chips a{background:#fff;border:1px solid var(--line);border-radius:99px;padding:.38rem .85rem;font-size:.83rem;color:var(--ink);font-weight:600}footer{border-top:1px solid var(--line);padding:1.6rem 0;font-size:.8rem;color:var(--muted);background:#EBEBED}
+:root{
+  --bg:#F5F5F7;
+  --card:#FFFFFF;
+  --ink:#1D1D1F;
+  --muted:#515154;
+  --line:#E5E5EA;
+  --accent:#059669;
+  --accent2:#047857;
+  --star:#F59E0B;
+  --shadow-sm:0 2px 8px rgba(0,0,0,.04),0 1px 2px rgba(0,0,0,.03);
+  --shadow-md:0 14px 34px -10px rgba(0,0,0,.10),0 4px 10px rgba(0,0,0,.04);
+}
+html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+body{font-family:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,'SF Pro Display',sans-serif;background:radial-gradient(1000px 420px at 50% -100px,#ECFDF5 0%,rgba(236,253,245,0) 70%),var(--bg);color:var(--ink);font-feature-settings:"cv02","cv03","cv04"}
+h1{font-size:clamp(1.85rem,3.3vw,2.65rem);line-height:1.12;letter-spacing:-.03em;font-weight:800}
+h2{font-size:clamp(1.32rem,2.2vw,1.65rem);letter-spacing:-.022em;font-weight:700}
+h3{font-weight:700;letter-spacing:-.015em}
+.sub{font-size:1.05rem;line-height:1.62;color:var(--muted)}
+.cab{background:rgba(255,255,255,.82);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(229,229,234,.85)}
+.cab-in{height:62px}
+.marca{display:inline-flex;align-items:center;gap:.62rem;font-weight:800;font-size:1.02rem;letter-spacing:-.02em;color:var(--ink)}
+.marca:hover{text-decoration:none}
+.marca-ico{flex-shrink:0;box-shadow:0 4px 12px -2px rgba(5,150,105,.38);border-radius:9px}
+.marca-txt{display:inline-flex;align-items:baseline;gap:.08rem;flex-wrap:wrap}
+.marca-txt span{color:var(--accent)}
+.marca-txt em{font-style:normal;font-size:.68rem;font-weight:700;color:#047857;background:#ECFDF5;border:1px solid #A7F3D0;padding:.14rem .5rem;border-radius:99px;margin-left:.45rem;letter-spacing:0}
+nav a{font-weight:600;font-size:.86rem;color:var(--muted);padding:.38rem .68rem;border-radius:99px;transition:all .15s}
+nav a:hover{color:var(--ink);background:rgba(0,0,0,.05);text-decoration:none}
+.pill{background:#ECFDF5;color:#047857;border:1px solid #A7F3D0;font-weight:700;letter-spacing:.03em;padding:.28rem .75rem}
+.geo-respuesta,.nota-transparencia-3{background:linear-gradient(180deg,#FFFFFF 0%,#F9FAFB 100%);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:16px;padding:1.15rem 1.35rem;margin:1.2rem 0;box-shadow:var(--shadow-sm);line-height:1.6}
+.app-grid{gap:1.15rem;margin:1.5rem 0 2.2rem}
+.app-card{border-radius:20px;padding:1.35rem;box-shadow:var(--shadow-sm);border:1px solid rgba(0,0,0,.06);transition:transform .2s cubic-bezier(.2,.8,.2,1),box-shadow .2s ease,border-color .2s ease}
+.app-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:#A7F3D0}
+.app-ico{border-radius:15px}
+.app-nota{background:#F1F5F9;border:1px solid #CBD5E1;border-radius:14px;padding:.4rem .68rem;color:#0F172A}
+.app-nota b{font-size:1.25rem;letter-spacing:-.02em}
+.tiendas{background:#F5F5F7;border:1px solid var(--line);border-radius:12px;padding:.55rem .75rem}
+.barra-m{height:9px;background:#E5E5EA}
+.barra-m > i{background:#1E293B}
+.btn{border-radius:12px;font-weight:700;padding:.55rem .8rem;transition:all .15s ease}
+.btn-p{background:linear-gradient(180deg,#10B981 0%,#059669 100%);box-shadow:0 2px 6px rgba(5,150,105,.28),inset 0 1px 0 rgba(255,255,255,.22)}
+.btn-p:hover{background:linear-gradient(180deg,#059669 0%,#047857 100%);transform:translateY(-1px);box-shadow:0 6px 14px rgba(5,150,105,.32);text-decoration:none}
+.btn-s{background:#F5F5F7;border-color:var(--line)}
+.btn-s:hover{background:#E5E5EA;text-decoration:none}
+.t-wrap,.tabla-scroll{border-radius:18px;box-shadow:var(--shadow-sm);border:1px solid rgba(0,0,0,.06);overflow-x:auto;background:var(--card);margin:1rem 0}
+table.t th,.tabla-vf th{background:#F5F5F7;font-size:.73rem;letter-spacing:.04em;padding:.72rem .75rem}
+table.t td,.tabla-vf td{padding:.68rem .75rem;border-bottom:1px solid var(--line)}
+.vs-grid a,.of-chips a{border-radius:14px;box-shadow:var(--shadow-sm);border:1px solid rgba(0,0,0,.06);transition:all .16s ease}
+.vs-grid a:hover,.of-chips a:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);border-color:var(--accent);text-decoration:none}
+.vs-box > div,.card-test,.vf-card{border-radius:18px;box-shadow:var(--shadow-sm);border:1px solid var(--line);background:var(--card);padding:1.15rem 1.3rem}
+.grid-tests-6,.vf-comparativa{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.1rem 0}
+.test-head{display:flex;justify-content:space-between;gap:.5rem;font-size:.78rem;color:var(--muted);margin-bottom:.4rem}
+.faq-item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:.85rem 1.1rem;margin-bottom:.6rem;box-shadow:var(--shadow-sm)}
+.faq-item summary{cursor:pointer;list-style:none}
+.faq-item p{margin:.6rem 0 0;color:var(--muted);font-size:.92rem}
+.gana{border-color:#CBD5E1;box-shadow:var(--shadow-sm)}
+footer{background:#EBEBED;border-top:1px solid var(--line);margin-top:4rem}
+</style>
+</head>
+<body>
+<header class="cab">
+  <div class="wrap cab-in">
+    <a href="/fr-be/" class="marca" aria-label="werkbonappvergelijken.be — Startpagina">
+  <svg class="marca-ico" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+    <defs>
+      <linearGradient id="gAppsBe" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#10B981"/>
+        <stop offset="1" stop-color="#047857"/>
+      </linearGradient>
+    </defs>
+    <rect width="32" height="32" rx="9" fill="url(#gAppsBe)"/>
+    <rect x="9.5" y="5" width="13" height="22" rx="3.2" fill="rgba(255,255,255,.16)" stroke="#fff" stroke-width="2"/>
+    <path d="M13 13.5l2 2 4-4" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="16" cy="23" r="1.2" fill="#fff"/>
+  </svg>
+  <span class="marca-txt">werkbonapp<span>.be</span><em>Praktijktest op de Werf</em></span>
+</a>
+    <nav>
+      <a href="/fr-be/#apps">Top Apps</a>
+      <a href="/fr-be/#3touches">Test 3 Touches</a>
+      <a href="/fr-be/#metiers">18 Métiers</a>
+      <a href="/fr-be/facturation-peppol-2026/">App Peppol 2026</a>
+      <a href="/fr-be/notre-methode/">Méthode</a>
+      <span class="lang-sw"><a href="/hoe-wij-testen/">NL</a> · <strong>FR</strong></span>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>Comment nous testons les applications de chantier en Belgique</h1><div class="app-card"><p>Déclaration de transparence : Cette étude de terrain est réalisée par l'équipe d'Avantium. Toutes les applications ont été testées sur des smartphones iOS et Android identiques dans des conditions réelles de chantier en Belgique (novembre 2026).</p></div>
+</main>
+<footer>
+  <div class="wrap">
+    <p><strong>werkbonappvergelijken.be/fr-be/</strong> — Étude Terrain Applications de Chantier Belgique. Éditeur : Banc d'Essai Applications Mobiles du Bâtiment · Charleroi &amp; Wavre (Laurent Dubois · Installateur agréé (RGIE/RESCert) &amp; testeur principal d'applications mobiles de chantier). Novembre 2026.</p>
+    <p style="margin:.4rem 0"><a href="/fr-be/facturation-peppol-2026/">Facturation Peppol obligatoire 2026, TVA 6 % &amp; Loi Breyne sur GSM</a> · <a href="/fr-be/devis-vocal-chantier-application/">Devis vocal sur chantier</a> · <a href="/fr-be/bon-de-travail-numerique-signature/">Bon d'intervention signé</a> · <a href="/">Nederlandse versie (nl-BE)</a></p>
+    <p>Déclaration de transparence : Cette étude de terrain est réalisée par l'équipe d'Avantium. Toutes les applications ont été testées sur des smartphones iOS et Android identiques dans des conditions réelles de chantier en Belgique (novembre 2026).</p>
+    <div style="margin:1.2rem 0;padding:.9rem 1.1rem;background:rgba(15,23,42,.04);border:1px solid rgba(15,23,42,.14);border-radius:10px;font-size:.82rem;line-height:1.55">
+      <strong>Programme d'Affiliation &amp; Éditeurs de Logiciels :</strong> Ce portail comparatif est financé par des liens d'affiliation et des partenariats avec les éditeurs évalués. Si vous représentez l'un des logiciels comparés sur <strong>werkbonappvergelijken.be</strong> et souhaitez nous transmettre votre lien d'affiliation officiel (programme partenaire) ou signaler une mise à jour de tarifs ou de fonctionnalités, écrivez-nous à <a href="mailto:afiliados@werkbonappvergelijken.be" style="font-weight:700;text-decoration:underline">afiliados@werkbonappvergelijken.be</a>.
+    </div>
+  </div>
+</footer>
+</body>
+</html>
