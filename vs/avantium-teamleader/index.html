@@ -129,7 +129,42 @@ table.t td,.tabla-vf td{padding:.68rem .75rem;border-bottom:1px solid var(--line
 footer{background:#EBEBED;border-top:1px solid var(--line);margin-top:4rem}
 
 </style>
-</head>
+<style id="pulido">/* pulido · común */
+img,svg,video{max-width:100%}
+td,th{overflow-wrap:break-word}
+@media (max-width:640px){h1,h2,h3{overflow-wrap:break-word;hyphens:auto}}
+/* pulido · cabecera */
+header.cab.pul-ajustado .marca-txt em,.marca-tag{display:none!important}
+header.cab{position:sticky;top:0;z-index:60}
+.cab-in{height:auto!important;min-height:56px;flex-wrap:wrap;row-gap:.25rem}
+html.pul-js .cab-in{flex-wrap:nowrap;column-gap:1rem}
+html.pul-js .cab-in>*:first-child{flex-shrink:0;min-width:0}
+html.pul-js .cab-in>nav{flex-wrap:nowrap;margin-left:auto}
+html.pul-js header.cab.pul-dos .cab-in{flex-wrap:wrap}
+html.pul-js header.cab.pul-dos .cab-in>nav{flex-wrap:wrap;margin-left:0}
+.cab-in>nav{display:flex;align-items:center}
+header.cab.pul-compacto .cab-in>*:first-child{flex-shrink:1;min-width:0;overflow:hidden}
+.cab-in>nav>a,.cab-in>nav>details>summary,.cab-in>nav>span{white-space:nowrap;margin-left:0!important;flex-shrink:0}
+.pul-hamb{display:none;margin-left:auto;align-items:center;justify-content:center;width:42px;height:42px;border:0;border-radius:10px;background:transparent;color:#111827;cursor:pointer;flex-shrink:0;-webkit-tap-highlight-color:transparent}
+.pul-hamb:hover{background:rgba(0,0,0,.08)}
+.pul-hamb svg{width:22px;height:22px}
+.pul-hamb .pul-x{display:none}
+header.cab.pul-compacto .pul-hamb{display:inline-flex}
+header.cab.pul-compacto .cab-in>nav{display:none}
+header.cab.pul-compacto.pul-abierto .pul-hamb .pul-3{display:none}
+header.cab.pul-compacto.pul-abierto .pul-hamb .pul-x{display:block}
+header.cab.pul-compacto.pul-abierto .cab-in>nav{display:flex;flex-direction:column;align-items:stretch;gap:0;position:absolute;left:0;right:0;top:100%;margin:0;padding:.35rem 1.1rem 1.1rem;background:#fff;border-bottom:1px solid rgba(0,0,0,.08);box-shadow:0 18px 30px -12px rgba(0,0,0,.18);max-height:calc(100vh - 64px);overflow-y:auto;z-index:61}
+header.cab.pul-compacto.pul-abierto .cab-in>nav>a,header.cab.pul-compacto.pul-abierto .cab-in>nav>span,header.cab.pul-compacto.pul-abierto .cab-in>nav>details>summary{display:block;padding:.85rem .35rem!important;border-bottom:1px solid rgba(0,0,0,.08);border-radius:0!important;font-size:1rem!important;color:#111827;background:none!important;white-space:normal}
+header.cab.pul-compacto.pul-abierto .cab-in>nav>a:last-child{border-bottom:0}
+header.cab.pul-compacto.pul-abierto .cab-in>nav details>div{position:static!important;transform:none!important;box-shadow:none!important;border:0!important;width:auto!important;min-width:0!important;max-width:none!important;padding:0 0 .5rem .6rem!important;margin:0!important;display:block}
+header.cab.pul-compacto.pul-abierto .cab-in>nav details>div *{grid-template-columns:1fr!important}
+header.cab.pul-compacto.pul-abierto .cab-in>nav details>div a{display:flex;padding:.55rem .2rem;font-size:.95rem}
+header.cab.pul-compacto.pul-abierto .cab-in>nav a:focus-visible{outline:2px solid #1D4ED8}
+/* pulido · werkbonappvergelijken.be */
+.cab-in>nav{gap:.1rem}
+.kicker{display:inline-block;max-width:100%;line-height:1.45}
+@media (max-width:520px){.marca-txt{font-size:.9rem}.marca-ico{width:26px;height:26px}.marca{gap:.45rem}}
+@media (max-width:380px){.marca-txt{font-size:.82rem}}</style></head>
 <body>
 <header class="cab">
   <div class="wrap cab-in">
@@ -146,7 +181,7 @@ footer{background:#EBEBED;border-top:1px solid var(--line);margin-top:4rem}
     <path d="M13 13.5l2 2 4-4" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
     <circle cx="16" cy="23" r="1.2" fill="#fff"/>
   </svg>
-  <span class="marca-txt">werkbonapp<span>.be</span><em>Praktijktest op de Werf</em></span>
+  <span class="marca-txt">werkbonappvergelijken<span>.be</span><em>Praktijktest op de Werf</em></span>
 </a>
     <nav>
       <a href="/#apps">Top-Apps</a>
@@ -179,7 +214,7 @@ footer{background:#EBEBED;border-top:1px solid var(--line);margin-top:4rem}
     <ul style="font-size:.85rem;padding-left:1.1rem">
       <li><strong>In de Smartphone-App:</strong> 33 van 36 functies</li>
       <li><strong>Op de Kantoor-PC:</strong> 33 van 36 functies</li>
-      <li><strong>App Store / Google Play BE:</strong> 4.9 ★ / 4.9 ★</li>
+      <li><strong>App Store / Google Play BE:</strong> 4,9 ★ / 4,9 ★</li>
       <li><strong>Gebruiksgemak:</strong> 9,2/10 (Zelfde namiddag operationeel (inbegrepen onboarding van 30 min.))</li>
       <li><strong>Prijs hoogste pakket (1 / 3 / 5 gebr.):</strong> 49 € / 79 € / 109 € per maand</li>
       <li><strong>Contractduur &amp; opstart:</strong> Geen · maandelijks opzegbaar · Opstart: 0 € (gratis opstart, Peppol-activatie inbegrepen &amp; 14 dagen proef zonder bankkaart)</li>
@@ -195,7 +230,7 @@ footer{background:#EBEBED;border-top:1px solid var(--line);margin-top:4rem}
     <ul style="font-size:.85rem;padding-left:1.1rem">
       <li><strong>In de Smartphone-App:</strong> 19 van 36 functies</li>
       <li><strong>Op de Kantoor-PC:</strong> 23 van 36 functies</li>
-      <li><strong>App Store / Google Play BE:</strong> 3.6 ★ / 3.5 ★</li>
+      <li><strong>App Store / Google Play BE:</strong> 3,6 ★ / 3,5 ★</li>
       <li><strong>Gebruiksgemak:</strong> 8,5/10 (2 tot 4 dagen)</li>
       <li><strong>Prijs hoogste pakket (1 / 3 / 5 gebr.):</strong> 154 € / 204 € / 303 € per maand</li>
       <li><strong>Contractduur &amp; opstart:</strong> Kwartaal- of jaarcontract · Opstart: 0 € of betaald onboardingpakket</li>
@@ -244,9 +279,22 @@ footer{background:#EBEBED;border-top:1px solid var(--line);margin-top:4rem}
     <p style="margin:.4rem 0"><a href="/peppol-facturatie-2026/">Peppol B2B (2026) &amp; 6% Btw per App</a> · <a href="/offerte-via-spraak-app/">Offerte via spraak</a> · <a href="/digitale-werkbon-handtekening-app/">Digitale werkbon</a> · <a href="/ai-secretaresse-whatsapp-bouw/">AI-Telefoon &amp; WhatsApp</a> · <a href="/werf-app-offline-modus/">Offline-modus</a> · <a href="/tijdsregistratie-gps-checkinatwork/">GPS-tijdsregistratie</a> · <a href="/aankoopbonnen-scannen-nacalculatie/">Bonnenscan</a> · <a href="/vorderingsstaat-software-bouw/">Vorderingsstaten</a> · <a href="/llms.txt">llms.txt</a></p>
     <p>Transparantieverklaring: Deze praktijkstudie wordt opgesteld door het team achter Avantium. Alle geteste apps werden op identieke iOS- en Android-toestellen onder dezelfde reële Belgische werfomstandigheden getest (stand november 2026).</p>
     <div style="margin:1.2rem 0;padding:.9rem 1.1rem;background:rgba(15,23,42,.04);border:1px solid rgba(15,23,42,.14);border-radius:10px;font-size:.82rem;line-height:1.55">
-    <strong>Affiliate-programma &amp; Softwareleveranciers:</strong> Dit vergelijkingsportaal wordt gefinancierd via affiliate-links en samenwerkingen met de geteste softwarehuizen. Vertegenwoordigt u een van de op <strong>werkbonappvergelijken.be</strong> vergeleken pakketten en wilt u ons uw officiële affiliate-link (partnerprogramma) bezorgen of een update van uw prijzen of functies doorgeven? Mail ons rechtstreeks op <a href="mailto:afiliados@werkbonappvergelijken.be" style="font-weight:700;text-decoration:underline">afiliados@werkbonappvergelijken.be</a>.
+    <strong>Affiliate-programma &amp; Softwareleveranciers:</strong> Dit vergelijkingsportaal wordt gefinancierd via affiliate-links en samenwerkingen met de geteste softwarehuizen. Vertegenwoordigt u een van de op <strong>werkbonappvergelijken.be</strong> vergeleken pakketten en wilt u ons uw officiële affiliate-link (partnerprogramma) bezorgen of een update van uw prijzen of functies doorgeven? Mail ons rechtstreeks op <a href="mailto:partners@werkbonappvergelijken.be" style="font-weight:700;text-decoration:underline">partners@werkbonappvergelijken.be</a>.
   </div>
   </div>
 <div class="wrap" style="padding:12px 0;border-top:1px solid rgba(148,163,184,.2);font-size:13px"><b>7 Dossiers België (2026):</b> <a href="/digitale-werkbon-handtekening-app/" style="margin-right:10px">Digitale werkbon app met handtekening op smartphone &amp; tablet (België 2026)</a> · <a href="/tijdsregistratie-werf-gps-app/" style="margin-right:10px">Tijdsregistratie bouw app met GPS, mobiele prikklok en Checkinatwork (België 2026)</a> · <a href="/werf-app-offline-modus/" style="margin-right:10px">Werf app met 100 % offline-modus voor kelders en technische ruimtes zonder 4G/5G (België 2026)</a> · <a href="/offerte-inspreken-spraak-ai/" style="margin-right:10px">Offerte opmaken via spraak en AI rechtstreeks op de werf of in de bestelwagen (België 2026)</a> · <a href="/aankoopbonnen-scannen-nacalculatie/" style="margin-right:10px">Leveringsbonnen en aankoopfacturen scannen met AI in de bestelwagen (België 2026)</a> · <a href="/whatsapp-ai-assistent-vakmannen/" style="margin-right:10px">AI-secretaresse via WhatsApp en telefoon voor Belgische installateurs en vakmannen (2026)</a> · <a href="/fr-be/application-bon-intervention-chantier-belgique/" style="margin-right:10px">Meilleure application mobile de bon d'intervention, devis vocal et suivi de chantier en Belgique (2026)</a></div></footer>
-</body>
+<script>(function(){document.documentElement.classList.add("pul-js");
+var cab=document.querySelector("header.cab");if(!cab)return;var fila=cab.querySelector(".cab-in")||cab,nav=cab.querySelector(".cab-in>nav");if(!nav)return;
+var b=document.createElement("button");b.type="button";b.className="pul-hamb";b.setAttribute("aria-label","Menu");b.setAttribute("aria-expanded","false");
+b.innerHTML='<svg class="pul-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="pul-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>';
+fila.appendChild(b);
+b.addEventListener("click",function(){var o=cab.classList.toggle("pul-abierto");b.setAttribute("aria-expanded",o?"true":"false")});
+nav.addEventListener("click",function(e){if(e.target.closest("a"))cab.classList.remove("pul-abierto")});
+function cabe(){return fila.scrollWidth<=fila.clientWidth+1&&nav.scrollWidth<=nav.clientWidth+1}
+function medir(){var abierto=cab.classList.contains("pul-abierto");cab.classList.remove("pul-compacto","pul-abierto","pul-ajustado","pul-dos");
+if(0&&document.documentElement.clientWidth>=0){cab.classList.add("pul-dos");return}
+if(cabe())return;cab.classList.add("pul-ajustado");if(cabe())return;
+cab.classList.add("pul-compacto");if(abierto)cab.classList.add("pul-abierto")}
+medir();addEventListener("resize",medir);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(medir);addEventListener("load",medir);
+})();</script></body>
 </html>
