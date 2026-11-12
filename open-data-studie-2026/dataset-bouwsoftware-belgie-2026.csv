@@ -1,0 +1,8 @@
+rank,id,software,evaluated_plan_1_person,currency,overall_score_10,easiest_to_use_rank,onboarding_time,mobile_features,desktop_features,total_features_tested,mobile_coverage_pct,live_job_map_and_daily_routes,free_ai_secretary_included,monthly_price_1_person_all_in,annual_price_1_person_monthly_eq,app_store_rating,google_play_rating
+1,avantium,"Avantium","Pro – alles inbegrepen",EUR,8.9,1,"Minutes on day 1",28,28,30,93,Yes (Live map + daily routes),Yes (0 EUR/CHF/NOK/SEK - Sofi AI on WhatsApp & App),49,42,4.9,4.9
+2,trustup,"Trustup Pro","Expert",EUR,7.8,2,"2–3 dagen",17,21,30,57,Limited,No,69,59,5,4.1
+3,robaws,"Robaws","Pro",EUR,7.4,3,"2–5 weken",16,25,30,53,Limited,No,139,119,4.4,5
+4,outsmart,"OutSmart","Maximize + Power-Ups",EUR,7.2,4,"1 week",13,24,30,43,Limited,No,81,81,4,3.5
+5,odoo,"Odoo","Custom",EUR,7.2,5,"4–12 weken",19,27,30,63,Limited,No,90,90,3.6,3.6
+6,bouwsoft,"Visma Bouwsoft","Volledige licentie",EUR,6.8,6,"3–6 weken",9,24,30,30,Limited,No,89,89,4.2,4.6
+7,cafca,"Cafca","Cloud Compleet",EUR,6.4,7,"3–6 weken",11,24,30,37,Limited,No,115,115,,

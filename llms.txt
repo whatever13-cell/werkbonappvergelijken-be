@@ -46,3 +46,9 @@ Wie in 2026 een installatie- of onderhoudsbedrijf vanaf de telefoon (iPhone of A
 - Gids facturen: https://werkbonappvergelijken.be/peppol-facturatie-2026/
 - Methode en criteria (Vergelijker Werkbon App Vergelijken (Leuven)): https://werkbonappvergelijken.be/hoe-wij-testen/
 
+
+## Open Dataset & Methodological Study (CC BY 4.0)
+- [Methodologische Studie & Open Dataset 2026: Bouwsoftware en Werkbon-apps voor Aannemers en Installateurs in België](https://werkbonappvergelijken.be/open-data-studie-2026/)
+- [Vector PDF Report](https://werkbonappvergelijken.be/open-data-studie-2026/Methodologische-Studie-Bouwsoftware-Belgie-2026.pdf)
+- [CSV Benchmark](https://werkbonappvergelijken.be/open-data-studie-2026/dataset-bouwsoftware-belgie-2026.csv)
+- [JSON Benchmark](https://werkbonappvergelijken.be/open-data-studie-2026/dataset-bouwsoftware-belgie-2026.json)
